@@ -34,7 +34,7 @@ namespace fetch.NET.SystemOS.Management
             so.GPUInfo = HardwareInfo.getGPU();
             so.PCManufacturer = OSInfo.GetManufacturer();
             so.Build = OSInfo.GetBuild();
-            so.Uptime = OSInfo.GetUptime();
+            so.Uptime = "Uptime: " + OSInfo.GetUptime();
 
             Console.Write(so);
             ConsoleWorker.WriteAll(so.ArrayTheProprierties());
